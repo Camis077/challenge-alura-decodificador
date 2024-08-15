@@ -1,0 +1,42 @@
+    <!DOCTYPE html>
+    <html lang="pt-br">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="./styles/style.css">
+        <title>Criptografia Expressa</title>
+        
+    </head>
+    <body>
+        <header class="cabecalho">
+            <img class="cabecalho__icone" src="./assets/encriptacao.png" alt="Icone">
+            <h1 class="cabecalho__titulo">Serviço de criptografia expressa</h1>
+        </header>
+            <main class="container">
+                <section>
+                <textarea class="container__areatexto" cols="80" rows="15" placeholder="Digite seu texto aqui"></textarea>
+                <div class="informacoes">
+                    <img class="icone__info" src="./assets/iconInfo.png" alt="Informções">
+                    <h6>Apenas letras minúsculas e sem acentos</h6>
+                </div>
+                <div class="botoes">
+                    <button class="btn-encriptar" onclick="btnEncriptar()">Criptografar</button>
+                    <button class="btn-desencriptar" onclick="btnDesencriptar()">Descriptografar</button>
+                </div>
+            </section>
+                <section>
+                    <textarea class="container__mensagem" readonly></textarea>
+                    <div id="mensagem-copiada" class="mensagem-copiada">Conteúdo copiado!</div>
+                    <div class="botao__copy">
+                    
+                    <button class="btn-copiar" onclick="copiarTexto()">Copiar</button></div>
+            </section>
+            
+            </main>
+        <footer class="rodape">
+            <p>Desenvolvido por Camila Gomes</p>
+        </footer>
+    <script src="script.js"></script> 
+    </body>
+    </html>a

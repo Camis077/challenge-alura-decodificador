@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&family=League+Spartan:wght@100..900&family=Sirin+Stencil&display=swap');
+
+:root {
+    --fonte-primaria: "Sirin Stencil", sans-serif;
+    --fonte-secundaria: "League Spartan", sans-serif;
+   
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    background-color:#1D1D1E;
+}
+
+.cabecalho {
+    display: flex;
+    justify-content: center;
+}
+
+.cabecalho__icone {
+    padding: 2%;
+    width: 100px;
+    height: 100px;
+
+}
+
+.cabecalho__titulo {
+    padding: 2%;
+    font-family: var(--fonte-primaria);
+    font-weight:60;
+    font-size: 3.12rem;
+    color: #DFCAEC;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    justify-content: center;
+    gap: 40px;
+}
+
+
+.container__areatexto {
+    width: 450px;
+    height:550px;
+    text-transform: lowercase;
+    border: 2px solid #9635fd48;
+    border-radius: 8px;
+    padding: 5%;
+    background-color: #c2c1d8ce;
+    
+    
+}
+
+::placeholder {color: #222121;
+    font-family: "Inter", sans-serif;
+    font-optical-sizing: auto;
+    font-size: 1rem;
+    font-style: normal;
+}     
+
+.container__areatexto:focus {
+    outline: none;
+}
+
+
+.botoes{
+    display: flex;
+    gap: 30px;
+    padding: 15px;
+    margin-top: -5%;
+}
+
+.btn-encriptar{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 175, 212, 0.40), rgba(151,53,253,0.40));
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family: var(--fonte-secundaria);
+    color: #DFCAEC;
+    font-size: 1.43rem;
+    font-weight: 400;
+
+}
+
+.btn-encriptar:hover{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 174, 212), rgba(151,53,253));
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family:  var(--fonte-secundaria);
+    color: #222121;
+    font-size: 1.43rem;
+    font-weight: 500;
+
+}
+
+.btn-desencriptar{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 175, 212, 0.40), rgba(151,53,253,0.40));
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family:  var(--fonte-secundaria);
+    color: #DFCAEC;
+    font-size: 1.43rem;
+    font-weight: 400;
+
+}
+
+.btn-desencriptar:hover{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 174, 212), rgba(151,53,253));
+    width: 210px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family:  var(--fonte-secundaria);
+    color: #222121;
+    font-size: 1.43rem;
+    font-weight: 500;
+
+}
+
+
+
+.informacoes {
+    display: flex;
+    font-family:  var(--fonte-secundaria);
+    font-size: 1.12rem;
+    color: #474747;
+    position: relative;
+    bottom: 50px;
+    margin-left: 10px;
+    align-items: center;
+    
+}
+
+.icone__info {
+    width: 15px;
+    padding: 2%;
+    
+}
+
+
+.container__mensagem {
+    display: flex;
+    width: 480px;
+    height:550px;
+    border: 1px solid  #544d5a1e ;
+    border-radius: 8px;
+    padding: 5%;
+    background:#1D1D1E;
+    background-image: url(/assets/Iconefundo.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: 40%;
+    margin:0px 0px 0px 20px;
+    padding-left: 25px;
+    color: #DFCAEC;
+    font-size: 1rem;
+
+}
+
+.container__mensagem:focus{
+    outline: none;
+}
+
+.botao__copy{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 30px;
+    padding: 5%
+}
+
+.btn-copiar{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 175, 212, 0.40), rgba(151,53,253,0.40));
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family:  var(--fonte-secundaria);
+    color: #DFCAEC;
+    font-size: 1.43rem;
+    font-weight: 500;
+    
+}
+
+.btn-copiar:hover{
+    background: #1D1D1E;
+    background-image:linear-gradient( rgba(13, 174, 212), rgba(151,53,253));
+    width: 220px;
+    height: 50px;
+    border-radius: 15px;
+    border: none;
+    cursor: pointer;
+    font-family:  var(--fonte-secundaria);
+    color: #DFCAEC;
+    font-size: 1.43rem;
+    font-weight: 500;
+}
+
+
+.mensagem-copiada {
+    display: none;
+    color: #DFCAEC;
+    bottom: 180px;
+    position: fixed;
+    right: 435px;
+}
+
+.rodape {
+    position: sticky;
+    background-image:linear-gradient(#0dafd48c, #9635fd7c );
+    padding: 15px;
+    text-align: center;
+    font-family: var(--fonte-primaria);
+    font-size: 1.25rem;
+    font-weight: 400;
+    color: #DFCAEC;
+}
